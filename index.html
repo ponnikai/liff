@@ -57,7 +57,7 @@
     }
 
     async function scanCode() {
-      conts result = await liff.scanCode()
+      const result = await liff.scanCode()
       document.getElementById("scanCode").append(result.value)
     }
 
@@ -83,8 +83,8 @@
         await liff.sendMessages([
           {
             "type" : "sticker",
-            "stickerId" : 2,
-            "packageId":2
+            "stickerId" : 1,
+            "packageId":1
           }
         ])
         alert("Message sent")
